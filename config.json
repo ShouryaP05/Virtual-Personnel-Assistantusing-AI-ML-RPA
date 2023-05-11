@@ -1,0 +1,4 @@
+# Configure the Google Calendar API settings (replace 'credentials.json' with your credentials file)
+credentials_file = "credentials.json"
+credentials = service_account.Credentials.from_service_account_file(credentials_file)
+service = build("calendar", "v3", credentials=credentials)
